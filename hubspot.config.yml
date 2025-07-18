@@ -1,4 +1,4 @@
-defaultPortal: "" # HubSpotアカウントのポータルIDを設定
+defaultPortal: "243332779" # HubSpotアカウントのポータルIDを設定
 defaultMode: "developer" # 開発者モード
 
 # プロジェクト設定
@@ -10,14 +10,12 @@ projects:
 # 環境設定
 environments:
   - name: "development"
-    portalId: "" # 開発環境のポータルID
+    portalId: "243332779" # 開発環境のポータルID
   - name: "production"
     portalId: "" # 本番環境のポータルID
 
-# UI Extensions設定
-extensions:
-  - name: "invoice-creator-deal-extension"
-    type: "crm-record"
+# Authentication: Use 'hs auth personalaccesskey' command
+# DO NOT commit Personal Access Keys or other sensitive credentials
     file: "src/app/extensions/InvoiceCreatorExtension.jsx"
     objectTypes:
       - "deals"

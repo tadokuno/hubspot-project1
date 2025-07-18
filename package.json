@@ -10,11 +10,11 @@
     "upload": "hs project upload"
   },
   "dependencies": {
-    "@hubspot/ui-extensions": "^4.0.0",
-    "@hubspot/ui-extensions-react": "^4.0.0"
+    "@hubspot/ui-extensions": "^0.9.3",
+    "@hubspot/api-client": "^13.0.0"
   },
   "devDependencies": {
-    "@hubspot/cli": "^6.0.0",
+    "@hubspot/cli": "^7.5.4",
     "typescript": "^5.0.0",
     "@types/react": "^18.0.0"
   },

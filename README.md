@@ -83,8 +83,8 @@ HubSpotのUI ExtensionとServerless関数を使って、取引詳細画面から
 # 1. 依存関係インストール
 npm install
 
-# 2. HubSpot認証
-hs auth
+# 2. HubSpot認証（Personal Access Keyを設定）
+hs auth personalaccesskey
 
 # 3. 開発環境起動
 npm run dev
@@ -92,6 +92,12 @@ npm run dev
 # 4. デプロイ
 npm run deploy
 ```
+
+### ⚠️ セキュリティ注意事項
+
+- Personal Access Keyやその他の認証情報をコミットしないよう注意してください
+- 認証は `hs auth personalaccesskey` コマンドを使用してください
+- `.gitignore` により機密情報ファイルは除外されています
 
 ## スクリーンショット
 
