@@ -1,0 +1,41 @@
+defaultPortal: "" # HubSpotアカウントのポータルIDを設定
+defaultMode: "developer" # 開発者モード
+
+# プロジェクト設定
+projects:
+  - name: "hubspot-invoice-creator"
+    srcDir: "src"
+    platformVersion: "2024.1"
+    
+# 環境設定
+environments:
+  - name: "development"
+    portalId: "" # 開発環境のポータルID
+  - name: "production"
+    portalId: "" # 本番環境のポータルID
+
+# UI Extensions設定
+extensions:
+  - name: "invoice-creator-deal-extension"
+    type: "crm-record"
+    file: "src/app/extensions/InvoiceCreatorExtension.jsx"
+    objectTypes:
+      - "deals"
+    locations:
+      - "crm.record.tab"
+    
+  - name: "invoice-creation-form"
+    type: "crm-record"
+    file: "src/app/extensions/InvoiceCreationForm.jsx"
+    objectTypes:
+      - "deals"
+    locations:
+      - "crm.record.tab"
+
+# Serverless Functions設定
+functions:
+  - name: "getDealData"
+    file: "src/app/functions/getDealData.js"
+    
+  - name: "createInvoice"
+    file: "src/app/functions/createInvoice.js"

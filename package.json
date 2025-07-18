@@ -1,0 +1,24 @@
+{
+  "name": "hubspot-invoice-creator",
+  "version": "1.0.0",
+  "description": "HubSpot Invoice Creator with UI Extensions and Serverless Functions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hs project dev",
+    "build": "hs project build",
+    "deploy": "hs project deploy",
+    "upload": "hs project upload"
+  },
+  "dependencies": {
+    "@hubspot/ui-extensions": "^4.0.0",
+    "@hubspot/ui-extensions-react": "^4.0.0"
+  },
+  "devDependencies": {
+    "@hubspot/cli": "^6.0.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0"
+  },
+  "keywords": ["hubspot", "ui-extensions", "serverless", "invoice"],
+  "author": "tadokuno",
+  "license": "MIT"
+}
